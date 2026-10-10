@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AmongUsPath Condition="'$(AmongUsPath)' == ''">C:\Users\mitsu\Downloads\among-us-windows\AmongUsItch\Itch</AmongUsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ChatGuardAudit.cs" />
+    <Reference Include="Mono.Cecil" HintPath="$(AmongUsPath)\BepInEx\core\Mono.Cecil.dll" />
+  </ItemGroup>
+</Project>
